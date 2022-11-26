@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Pacifico&family=Rubik+Distressed&display=swap');
+@font-face {
+    font-family: Roboto;
+    src: url('./fonts/Roboto-ThinItalic.ttf');
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: #019faf;
+    
+}
+h1{
+    color: #f2607b;
+    text-align: center;
+    font-size: 50px;
+    font-family: Roboto, 'Times New Roman', Times, serif;
+}
+h2{
+    color: #65cca9;
+    text-align: right;
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
+}
+h5{
+    color: #3f1b40;
+    font-size: 100px;
+    font-family: 'Rubik Distressed', cursive;
+    text-align: center;
+}
+
+p{
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: right;
+    
+}
+.logo{
+    float:left;
+    border-radius:100%;
+    border: 5px solid #3f1b40;
+
+}
+.izquierda{
+    text-align:left;
+    font-size: 10px;
+     color: black;
+}
+.derecha{
+    text-align:right;
+    font-size: 10px;
+     color: black;
+}
+.centro{
+    text-align:center;
+    font-size: 30px;
+     color: black;   
+}
+#titulo{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: #8fce00;
+}
+#imagen1{
+    height: 500px;
+    width: 500px;
+    float:left;
+    border-radius:100%;
+    border: 5px solid #3f1b40;
+}
+
+#imagen2{
+    height: 500px;
+    width: 500px;
+    float:right;
+    border-radius:100%;
+    border: 5px solid #3f1b40;
+}
+
+#video{
+    height: 500px;
+    width: 500px;
+    float:center;
+    border-radius:100%;
+    border: 5px solid #3f1b40;
+}
