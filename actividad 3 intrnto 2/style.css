@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Pacifico&family=Rubik+Distressed&display=swap');
+@font-face {
+    font-family: Roboto;
+    src: url('./fonts/Roboto-BlackItalic.ttf');
+
+}
+*{
+    box-sizing: border-box;
+
+}
+
+.articulo,.articulo2,#articulo3{
+    font-size: 2rem;
+    background: rgba(255,255,255,.4); 
+}
+.articulo p{
+    text-align: center;
+
+}
+.articulo header{
+    color: black; 
+    background: rgba(255,255,255,.4);  
+    margin-top: 30px;
+    font-family: 'Pacifico', cursive;
+
+}
+#articulo3{
+    position: relative;
+    right: 100%;
+}
+.articulo2{
+    position: relative;
+    left: 200%;
+}
+
+.articulo2 p{
+   text-align: left;
+}
+
+header{
+    display:flex;
+    height:70px;
+    background-color: #FFBF00;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+    }
+body{
+      /*
+    background: url("./imagenes/SLOGAN.jpg");
+    margin: 0%;
+    padding: 0%;
+    background-repeat:no-repeat ;
+   background-position: center center;
+   background-size:cover ;
+
+  margin:0;
+  margin-bottom: 25rem;*/
+
+  background: url("./imagenes/SLOGAN.jpg") no-repeat  center center fixed; 
+  overflow: scroll;
+  background-attachment: fixed;
+  overflow: auto;
+  
+}
+#logo{
+    display: flex;
+    align-items: center;
+}
+#logo img{
+    height: 100px;
+    border-radius: 700px;
+}
+#logo .titulo{
+    padding-left: 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    color: #fff;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    background-color: aqua;
+}
+
+nav input{
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    outline:none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    padding-left: 10px;
+    
+}
+.grid{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%,1fr));
+    gap:5px;
+}
+.image-wrapper{
+    position:relative;
+    overflow: hidden;
+}
+.image-wrapper > img{
+    display:block;
+    width:100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+.image-wrapper > .content{
+   
+    position:absolute;
+    inset:0;
+    font-size: 2rem ;
+    padding: 1rem;
+    background: rgba(255,255,255,.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.image-wrapper:hover> img.blur{
+    filter: blur(5px);
+}
+.image-wrapper:hover> img.zoom{
+    transform: scale(1.1);
+}
+
+.image-wrapper>image,
+.image-wrapper>.content{
+    transition: 200ms ease-in-out;
+}
+.image-wrapper >.content.fade{
+    opacity: 0;
+}
+.image-wrapper:hover >.content.fade{
+    opacity: 1;
+}
+.image-wrapper >.content.slide-left{
+    transform: translateX(-100%);
+}
+.image-wrapper:hover >.content.slide-left{
+    transform: translateX(0%);
+}
+.image-wrapper >.content.slide-up{
+    transform: translateY(-100%);
+}
+
+.image-wrapper:hover >.content.slide-up{
+    transform: translateY(0%);
+}
+.image-wrapper >.content.slide-down{
+    transform: translateY(100%);
+}
+
+.image-wrapper:hover >.content.slide-down{
+    transform: translateY(0%);
+}
+#formulario{
+    padding-top: 5%;
+    display: flex;
+    font-family: 'Orbitron', sans-serif;
+    padding-left: 30px;
+    font-size: 50px;
+    color: #000;
+    margin-inline:auto ;
+
+
+}
+#mapa{
+margin-top: 10%;
+padding-top: 0%;
+padding-bottom: 70%;
+padding-left:  0%;
+display:flex;
+align-items: right;
+width: 50%;
+height: 50%;
+}
+
+.centro{
+    position: relative;
+    right:80%
+}
+.btn-carshop{
+    position:fixed;
+    width: 55px;
+    height:55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #FFBF00;
+    color:#fff
+    border-radius:25px; 
+    text-align:center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+
+}
+
+.btn-carshop:hover{
+    text-decoration:none ;
+    color: #FFBF00;
+    background: #fff;
+
+}
+
+footer{
+    position: relative;
+    bottom: 1300px;
+    background-image: radial-gradient( circle 767px at 10.2% 22.1%,  rgba(11,218,81,1) 0%, rgba(0,191,255,1) 90% );
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+  
+  .buttons a:hover {
+    transform: scale(1.2);
+  }
+
+  #video{
+    position: relative;
+    bottom: 1500px;
+    left: 800px;
+    height: 500px;
+    width: 500px;
+    border-radius:100%;
+    border: 5px solid #3f1b40;
+}
