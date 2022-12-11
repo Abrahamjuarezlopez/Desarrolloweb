@@ -1,0 +1,54 @@
+@import'mediaQueries.scss';
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Pacifico&family=Rubik+Distressed&display=swap');
+@import'mediaQueries.scss';
+@font-face {
+    font-family: Roboto;
+    src: url('./fonts/Roboto-BlackItalic.ttf');
+
+}
+
+.articulo{
+    font-size: 2rem;
+    background: rgba(255,255,255,.4);
+    @include breakpoint(mobile){
+        font-size: 0.5rem;
+    }
+    @include breakpoint(tablet){
+        font-size: 1rem;
+    }
+    p{
+        text-align: center;
+
+    } 
+    header{
+    color: black; 
+    background: rgba(255,255,255,.4);  
+    margin-top: 30px;
+    font-family: 'Pacifico', cursive;
+    }
+}
+
+.articulo2{
+    @extend .articulo;
+    position: relative;
+   
+    @include breakpoint(tablet){
+        left:100%;
+    }
+    @include breakpoint(mobile){
+        left:0%;
+    }
+    
+    left: 200%;
+}
+
+#articulo3{
+    @extend .articulo;
+    position: relative;
+    @include breakpoint(mobile){
+        right:0%
+    }
+    right: 100%;
+}

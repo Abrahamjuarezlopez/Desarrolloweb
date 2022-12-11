@@ -1,0 +1,22 @@
+$imagen-fondo:'../imagenes/SLOGAN.jpg';
+
+
+
+*{
+    box-sizing: border-box;
+
+}
+
+
+
+
+body{
+   
+ background: url($imagen_fondo) no-repeat  center center fixed; 
+  overflow: auto;
+
+  
+
+}
+
+

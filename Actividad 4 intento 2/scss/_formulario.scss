@@ -1,0 +1,28 @@
+@import'mediaQueries.scss';
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Pacifico&family=Rubik+Distressed&display=swap');
+@font-face {
+    font-family: Roboto;
+    src: url('./fonts/Roboto-BlackItalic.ttf');
+
+}
+#formulario{
+    padding-top: 5%;
+    display: flex;
+    font-family: 'Orbitron', sans-serif;
+    padding-left: 30px;
+    font-size: 50px;
+    @include breakpoint(mobile){
+        font-size: 30px;
+        padding-left: 50px;
+       
+    }
+    @include breakpoint(tablet){
+        font-size: 29px;
+        padding-left: 50px;
+       
+    }
+    color: #000;
+    margin-inline:auto ;
+}

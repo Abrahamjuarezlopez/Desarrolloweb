@@ -1,0 +1,22 @@
+@import 'mediaQueries.scss';
+
+.grid{
+ 
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%,1fr));
+    gap:5px;
+    
+    @include breakpoint(mobile){
+      display:flex;
+      flex-wrap: wrap;
+    }
+
+    @include breakpoint(tablet){
+      grid-template-columns:repeat(2,1fr) ;
+    }
+
+  
+  
+}
+

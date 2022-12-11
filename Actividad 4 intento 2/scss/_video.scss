@@ -1,0 +1,18 @@
+@import'mediaQueries.scss';
+#video{
+    position: relative;
+    bottom: 1400px;
+    left: 800px;
+    height: 500px;
+    width: 500px;
+    @include breakpoint(mobile){
+        left: -20px;
+        bottom: 200px;
+    }
+    @include breakpoint(tablet){
+        left: 20px;
+        bottom: 200px;
+    }
+    border-radius:100%;
+    border: 5px solid #3f1b40;
+}
