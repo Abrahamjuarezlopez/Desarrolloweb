@@ -1,0 +1,27 @@
+@import'mediaQueries.scss';
+nav{ 
+    a{ 
+    font-weight: 600;
+    padding-right: 10px;
+    text-decoration: none   ;
+     &:hover{
+        background-color: aqua;
+    }
+    @include breakpoint(mobile){
+        visibility: hidden;
+    }
+    }
+input{
+        width: 150px;
+        height: 30px;
+        font-size: 18px;
+        outline:none;
+        border: 1px solid silver;
+        border-radius: 30px;
+        padding-left: 10px;
+        @include breakpoint(mobile){
+            visibility: hidden;
+        }
+    
+    }
+}

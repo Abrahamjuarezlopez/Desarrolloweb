@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Pacifico&family=Rubik+Distressed&display=swap');
+@font-face {
+    font-family: Roboto;
+    src: url('./fonts/Roboto-BlackItalic.ttf');
+
+}
+#logo{
+    display: flex;
+    align-items: center;
+    
+    img{
+        height: 100px;
+        border-radius: 700px;
+    }
+    .titulo{
+        padding-left: 10px;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 30px;
+        color: #fff;
+    }
+}

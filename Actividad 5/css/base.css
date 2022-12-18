@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Distressed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Pacifico&family=Rubik+Distressed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Distressed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Pacifico&family=Rubik+Distressed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Distressed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Pacifico&family=Rubik+Distressed&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../imagenes/SLOGAN.jpg") no-repeat center center fixed;
+  overflow: auto;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/Roboto-BlackItalic.ttf");
+}
+#logo {
+  display: flex;
+  align-items: center;
+}
+#logo img {
+  height: 100px;
+  border-radius: 700px;
+}
+#logo .titulo {
+  padding-left: 10px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: aqua;
+}
+@media screen and (max-width: 480px) {
+  nav a {
+    visibility: hidden;
+  }
+}
+nav input {
+  width: 150px;
+  height: 30px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 30px;
+  padding-left: 10px;
+}
+@media screen and (max-width: 480px) {
+  nav input {
+    visibility: hidden;
+  }
+}
+
+header {
+  display: flex;
+  height: 70px;
+  background-color: #FFBF00;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.grid {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  gap: 5px;
+}
+@media screen and (max-width: 480px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.image-wrapper img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+}
+.image-wrapper .content {
+  position: absolute;
+  inset: 0;
+  font-size: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-wrapper:hover > img.blur {
+  filter: blur(5px);
+}
+.image-wrapper:hover > img.zoom {
+  transform: scale(1.1);
+}
+.image-wrapper > image, .image-wrapper > .content {
+  transition: 200ms ease-in-out;
+}
+.image-wrapper > .content.fade {
+  opacity: 0;
+}
+.image-wrapper:hover > .content.fade {
+  opacity: 1;
+}
+.image-wrapper > .content.slide-left {
+  transform: translateX(-100%);
+}
+.image-wrapper:hover > .content.slide-left {
+  transform: translateX(0%);
+}
+.image-wrapper > .content.slide-up {
+  transform: translateY(-100%);
+}
+.image-wrapper:hover > .content.slide-up {
+  transform: translateY(0%);
+}
+.image-wrapper > .content.slide-down {
+  transform: translateY(100%);
+}
+.image-wrapper:hover > .content.slide-down {
+  transform: translateY(0%);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/Roboto-BlackItalic.ttf");
+}
+.articulo, #articulo3, .articulo2 {
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.4);
+}
+@media screen and (max-width: 480px) {
+  .articulo, #articulo3, .articulo2 {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .articulo, #articulo3, .articulo2 {
+    font-size: 1rem;
+  }
+}
+.articulo p, #articulo3 p, .articulo2 p {
+  text-align: center;
+}
+.articulo header, #articulo3 header, .articulo2 header {
+  color: black;
+  background: rgba(255, 255, 255, 0.4);
+  margin-top: 30px;
+  font-family: "Pacifico", cursive;
+}
+
+.articulo2 {
+  position: relative;
+  left: 200%;
+}
+@media screen and (max-width: 768px) {
+  .articulo2 {
+    left: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .articulo2 {
+    left: 0%;
+  }
+}
+
+#articulo3 {
+  position: relative;
+  right: 100%;
+}
+@media screen and (max-width: 480px) {
+  #articulo3 {
+    right: 0%;
+  }
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/Roboto-BlackItalic.ttf");
+}
+#formulario {
+  padding-top: 5%;
+  display: flex;
+  font-family: "Orbitron", sans-serif;
+  padding-left: 30px;
+  font-size: 50px;
+  color: #000;
+  margin-inline: auto;
+}
+@media screen and (max-width: 480px) {
+  #formulario {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #formulario {
+    font-size: 29px;
+    padding-left: 50px;
+  }
+}
+
+#mapa {
+  display: flex;
+  margin-top: 10%;
+  padding-top: 0%;
+  padding-bottom: 70%;
+  padding-left: 0%;
+  display: flex;
+  align-items: right;
+  width: 50%;
+  height: 50%;
+}
+
+#video {
+  position: relative;
+  bottom: 1400px;
+  left: 800px;
+  height: 500px;
+  width: 500px;
+  border-radius: 100%;
+  border: 5px solid #3f1b40;
+}
+@media screen and (max-width: 480px) {
+  #video {
+    left: -20px;
+    bottom: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #video {
+    left: 20px;
+    bottom: 200px;
+  }
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  bottom: 1300px;
+  background-image: radial-gradient(circle 767px at 10.2% 22.1%, rgb(11, 218, 81) 0%, rgb(0, 191, 255) 90%);
+  min-height: 50vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  footer {
+    bottom: 800px;
+    width: 100vw;
+  }
+}
+
+.buttons {
+  min-width: 700px;
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 480px) {
+  .buttons {
+    min-width: 200px;
+  }
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #314652;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
+}
+
+.buttons a:hover {
+  transform: scale(1.2);
+}
+
+.btn-carshop {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #FFBF00;
+  color: #fff;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.btn-carshop:hover {
+  text-decoration: none;
+  color: #FFBF00;
+  background: #fff;
+}
+
+.centro {
+  position: relative;
+  right: 80%;
+}
+
+/*# sourceMappingURL=base.css.map */
